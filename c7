@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    
+    int arr[n], rev[n];
+    
+    // Input elements
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    
+    // Store in reverse order
+    for (int i = 0; i < n; i++) {
+        rev[i] = arr[n - 1 - i];
+    }
+    
+    // Print reversed array
+    for (int i = 0; i < n; i++) {
+        printf("%d ", rev[i]);
+    }
+    
+    return 0;
+}
+}
